@@ -56,4 +56,8 @@ public class ProductService {
         }
         return null;
     }
+
+    public List<Product> findProducts(String id, String name) {
+        return null;
+    }
 }
