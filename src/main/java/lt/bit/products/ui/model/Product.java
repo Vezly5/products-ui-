@@ -5,63 +5,58 @@ import java.util.UUID;
 
 public class Product {
 
-    private UUID id;
-    private String name;
-    private BigDecimal price;
-    private double quantity;
-    private String description;
+  private UUID id;
+  private String name;
+  private BigDecimal price;
+  private double quantity;
+  private String description;
+  private UUID supplierId;
 
+  public UUID getId() {
+    return id;
+  }
 
-    public Product() {
-        this.id = UUID.randomUUID();
-    }
+  public void setId(UUID id) {
+    this.id = id;
+  }
 
+  public String getName() {
+    return name;
+  }
 
-    public Product(String name, BigDecimal price, double quantity, String description) {
-        this.id = UUID.randomUUID();
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.description = description;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public UUID getId() {
-        return id;
-    }
+  public BigDecimal getPrice() {
+    return price;
+  }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
+  public void setPrice(BigDecimal price) {
+    this.price = price;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public double getQuantity() {
+    return quantity;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setQuantity(double quantity) {
+    this.quantity = quantity;
+  }
 
-    public BigDecimal getPrice() {
-        return price;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public double getQuantity() {
-        return quantity;
-    }
+  public UUID getSupplierId() {
+    return supplierId;
+  }
 
-    public void setQuantity(double quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public void setSupplierId(UUID supplierId) {
+    this.supplierId = supplierId;
+  }
 }
